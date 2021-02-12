@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Telemetry</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-letter fixed-top">
+      <a class="navbar-brand" href="#"><img src="" width="80px">Telemetry</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#brief">Brief</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#estadodelarte">Estado del Arte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#PDS">PDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#alcance">Alcance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Equipo">Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Referencias</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+  <section id="brief">
+    <h1>Brief</h1>
+
+    <ul>
+      <li>
+        <h2>Antecedentes del proyecto</h2>
+        <p>
+          Actualmente hay vehículos como el carro que encuentran implementados sensores que permiten la medición de las
+          variables relevantes en este y además funcionan como apoyo para conducir, tal y como lo es el sensor de
+          reversa,
+          además hay sensores de navegación, sensores para las puertas, medidores de velocidad, entre otras funciones
+          que
+          incluso van a la altura de vehículos inteligentes <a target="_blank"
+            href="https://patents.google.com/patent/US9711050B2/en">(Mas Informacion)</a> . Sin
+          embargo, no se puede aplicar los mismos módulos a una motocicleta debido a su gran diferencia en diseño y
+          funcionamiento.
+          <br>
+          <br>
+          Es por ello por lo que se plantea una oportunidad para implementar un kit de telemetría, para este segmento de
+          motos. Actualmente, se cuenta con una motocicleta AKT NKD hibrida en las instalaciones de la universidad
+          EAFIT,
+          con la cual se podrán realizar diferentes testeos y estudio de variables a considerar para la propuesta de
+          producto.
+          <br>
+          <br>
+          La motocicleta AKT NKD actualmente tiene sensores básicos integrados para la medición de variables claves
+          (como
+          la velocidad) y tienen un buen funcionamiento, sin embargo, son invasivos y poco estéticos, por lo que puede
+          provocar problemas en temas de comodidad del usuario y dificultad de instalación considerando un tema de
+          producción masiva. Por ello, este estudio está enfocado en el diseño de un kit de telemetría con baja invasión
+          al vehículo y amigable con el usuario.
+        </p>
+      </li>
+      <li>
+        <h2>Descripcion de la necesidad</h2>
+        <p>El uso de las motocicletas ha venido en aumento en las últimas décadas, al 2019 uno de cada 5,6 colombianos
+          usa
+          la motocicleta para transportarse principalmente por temas de facilidad de desplazamiento y economía. En este
+          sentido se indica además que las motos con mayores compras registradas corresponden a aquellas de bajo
+          cilindraje debido a su bajo costo, además en las motos matriculadas de presentan principalmente por las marcas
+          Bajaj, Kawasaki, Kymko, KTM y AKT tal y como se indica en el estudio del sector 2019
+          <a target="_blank" href="http://www.andi.com.co/Uploads/Estudio%20Motos%202019%20(1).pdf">(Más
+            Información).</a>
+          <br>
+          <p class="image-title"><em> <strong>Figura 1.</strong> Matriculas de motocicletas por razón social, 2018</em>
+          </p>
+          <img class="figure" src="images/Figura1.PNG" alt="">
+          <p class="image-title">Fuente: Cáculos ANDI con información DIAN</p>
+          <br>
+          <br>
+          <p>Para mantener un buen funcionamiento de la moto, es necesario tener un control y mantenimiento de esta, no
+            solamente para sacar el certificado de la revisión técnico-mecánica de la moto cada año.
+            <a href="https://www.medellin.gov.co/movilidad/de-interes/revision-tecnico-mecanica">(Más Información)</a>.
+            Sino
+            que, para su correcto
+            funcionamiento, rendimiento de la gasolina y buen estado del motor es necesario tener un control del estado
+            de
+            la moto. Para ello es necesario identificar las necesidades de mantenimiento a través del reconocimiento de
+            las
+            variables influyentes, sin embargo, en un taller mecánico se realiza dependiendo del estado de este, ya que
+            las
+            motos no cuentan con sistema de medición que permita visualizar el estado general y así poder tomar
+            decisiones
+            para realizar cambios (o incluso recomendarlos) en una moto que funciona a combustión.
+            <br>
+            <br>
+            Aunque ya se encuentra una motocicleta con sensores implementados en las instalaciones de la universidad
+            EAFIT,
+            estos son sumamente invasivos para la moto y pueden generar un rechazo por las personas en caso de sacar a
+            la
+            venta el producto. “La parte estética de una motocicleta es un aspecto altamente importante para el usuario”
+            <a href="http://www.andi.com.co/Uploads/Estudio%20Motos%202019%20(1).pdf">(Más Información)</a>, por ello,
+            es
+            sumamente tener en cuenta que la
+            idea no afecte la integridad de la moto.
+            <br></p>
+
+
+        </p>
+      </li>
+      <li>
+        <h2>Objetivo General</h2>
+        <p>Desarrollar un kit no invasivo de sensores, adecuado para motos de bajo cilindraje (100cc a 150cc), con el
+          fin
+          de generar una herramienta que permita: visualizar variables de operación en tiempo real, determinar los
+          factores que influyen en el consumo energético. </p>
+      </li>
+      <h2>Objetivos Especificos</h2>
+
+      <ul>
+        <li>
+          <p><span>&#10074;</span> Desarrollar una estrategia de priorización de variables, con ayuda de los parámetros
+            de
+            diseño estipulados,
+            acorde a las necesidades de monitoreo. </p>
+        </li>
+        <li>
+          <p><span>&#10074;</span> Diseñar de sistema de monitoreo que integre determinados sensores con un sistema de
+            envió remoto. </p>
+        </li>
+        <li>
+          <p><span>&#10074;</span> Puesta a punto de la calibración de los sensores de las variables a monitorear. </p>
+        </li>
+        <li>
+          <p><span>&#10074;</span> Diseñar un sistema de recepción remoto y de almacenamiento para los datos. </p>
+        </li>
+        <li>
+          <p><span>&#10074;</span> Diseñar una aplicación que permita visualizar las variables recolectadas y generar
+            percepciones de la
+            operación real (ideal que permita múltiples usuarios y vehículos, así como interacciones con ellos) </p>
+        </li>
+        <li>
+          <p><span>&#10074;</span> Monitorear en tiempo real la operación de la motocicleta. </p>
+        </li>
+        <li>
+          <p><span>&#10074;</span> Escoger los componentes adecuados para el proyecto, de acuerdo a la información
+            recolectada y a las
+            soluciones planteadas en el diseño. </p>
+        </li>
+      </ul>
+
+  </section>
+
+
+
+
+  <section id="estadodelarte">
+    <h1>Estado del Arte</h1>
+
+
+    <h2>Industrial: Patentes</h2>
+
+    <p> <strong>Cloud based activity monitor for human powered vehicle</strong>
+      <br>
+      <br>
+      Es un dispositivo que se instala a una bicicleta, con el fin de recopilar datos sobre posición global (GPS),
+      hábitos de manejo, uso de patrones y desempeño de la bicicleta. Para posteriormente enviarlos de forma
+      inalambrica
+      <a href="https://patents.google.com/patent/US8949022B1/">(Más información).</a>
+      <br>
+      <br>
+    </p>
+
+    <p>
+      <strong>Electromechanical control system of electric bicycle integrating smart mobile device and cloud
+        services</strong>
+    </p>
+    <br>
+    <p>Sistema de control de bicicletas eléctricas integrando teléfonos inteligentes <a
+        href="https://patents.google.com/patent/US8899366B2/ ">(Más Información).</a></p>
+    <br>
+    <p><strong>Engine System and Method </strong></p>
+    <br>
+    <p>Un sensor de presión y un sensor de sincronización se encargan de enviarle información a un controlador con el
+      fin de identificar si se lleva a cabo una combustión anormal en el cilindro a causa de presión máxima, tasa de
+      aumento de presión, señal de encendido real o señal del centro de combustión, de tal manera que el controlador
+      pueda activar un indicador de fallo <a
+        href="https://patents.google.com/patent/US20160160776A1/en?q=monitoring+combustion+engines&oq=monitoring+for+combustion+engines">(Más
+        Información).</a> </p>
+    <br>
+    <p><strong>Smart vehicle </strong></p>
+    <br>
+    <p>Un método para seguir el camino para vehículos inteligentes <a
+        href="https://patents.google.com/patent/US9711050B2/en ">(Más Información).</a></p>
+    <br>
+    <h2>Comercial: Fichas técnicas, Directorios, Almacenes, Páginas web</h2>
+
+
+    <p><strong>Equipo de telemetría multicanal </strong></p>
+    <p>Equipo de telemetría multicanal para la conexión de diferentes tipos de sensores extensométricos,
+      piezoeléctricos
+      o resistivos, para el ensayo de partes rotativas, principalmente. </p>
+
+    <p class="image-title"><em> <strong>Figura 2.</strong> Equipo de telemetría multicanal.</em>
+    </p>
+    <img class="figure" src="images/Figura2.PNG" alt="">
+    <p class="image-title">Fuente: Sensing, sensores de medida</p>
+
+
+
+    <p>
+      Un equipo de telemetría multicanal permite la conexión de múltiples sensores a un equipo, cuya transmisión se
+      realiza vía radio en tiempo real desde el emisor al receptor. Por tratarse de un equipo de telemetría
+      multicanal,
+      hablamos de múltiples emisores con múltiples receptores, modulados en la misma señal de radio.
+      <br>
+      <br>
+      Cada emisor puede acondicionar diferentes tipos de señales como IEPE, extensométrica, termopares, etc., que son
+      enviadas a los canales receptores que las demodulan y obtienen por separado, para analizar las variables
+      correspondientes de vibración, deformación, temperatura, etc.
+      <br>
+      <br> La serie DT200X del fabricante alemán Datatel es una serie de equipo de telemetría multicanal con entradas
+      estandarizadas para la realización de pruebas en partes rotativas de máquinas, principalmente.
+      <br>
+      <br>
+      Este equipo de telemetría multicanal, al igual que el resto de los sistemas de este fabricante, realiza la
+      transmisión en tiempo real, gracias a su señal analógica modulada en frecuencia, lo que aporta una veracidad y
+      fiabilidad de los datos del ensayo o aplicación en cuestión.
+      <br>
+      <br>
+      Seleccione entre una amplia gama de diferentes tipos y diseños de transmisores para medir diferentes tipos de
+      señales de sensores con un alto ancho de banda de señal. Adecuado para una amplia gama de aplicaciones
+      exigentes.
+      <br>
+      <br>
+      Su formato en rack permite a este equipo de telemetría crear todo tipo de conjuntos desde pocos a cientos de
+      canales, para las necesidades de cada ensayo.
+      <br>
+      <br>
+      Características principales del equipo de telemetría multicanal:
+    </p>
+
+    <ul>
+      <li>
+        <p><span>&#10074;</span> Transmisión de datos y alimentación sin contacto. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Tecnología robusta, probada en el campo y laboratorio. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Conexión directa de sensores como bandas extensométricas, termopares, RTD, sensores
+          de
+          presión, IEPE y sensores piezoeléctricos, etc.) </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Se puede utilizar en condiciones ambientales extremas (rango de temperatura de
+          funcionamiento: 40 a + 125 ° C, carga g hasta 150,000 g, resistente al aceite y la humedad). </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Alto ancho de banda de señal por canal, hasta 96 kHz (-3dB). </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Transmisión de datos sincrónica. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Alto nivel de precisión de medición y calidad de señal. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Transmisores de telemetría controlados a distancia con funciones de diagnóstico
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Módulos transmisores de telemetría miniaturizados.
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Componentes electrónicos giratorios encerrados en carcasas metálicas resistentes,
+          resistentes a las influencias ambientales.
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Receptores de telemetría en tecnología modular de 19″ o tipos compactos para
+          aplicaciones móviles.
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Salidas de señal analógica o digital estandarizadas.
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Los sistemas externos de adquisición de datos se pueden conectar directamente.
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Concepto de doble fuente de alimentación, fuente de alimentación inductiva o
+          alternativamente por batería.
+          integradas. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Opción de movimiento relativo significativo entre el rotor y el estátor sin afectar
+          los datos medidos. </p>
+      </li>
+      <li>
+        <p><span>&#10074;</span> Enfoque de sistema llave en mano para garantizar una puesta en marcha y manejo
+          convenientes </p>
+      </li>
+    </ul>
+    <hr>
+
+    <p><strong>RaceBox</strong></p>
+
+    <p class="image-title"><em> <strong>Figura 3.</strong> RaceBox.</em>
+    </p>
+    <img class="figure" src="images/racebox.jpg" alt="">
+    <p class="image-title">Fuente: Articulo disponible en Amazon.</p>
+
+
+    <p>RaceBox es la forma más moderna y precisa de medir las estadísticas de rendimiento de su vehículo. Utilizando el
+      GPS de última generación que proporciona una precisión y posicionamiento excepcionales de tan solo 10" funcionando
+      en la antena interna. Medir 0-60 mp/h de aceleración, 1/4 milla de veces o vueltas alrededor de su circuito
+      favorito nunca ha sido tan fácil. </p>
+
+    <p>Especificaciones: </p>
+
+    <ul>
+      <li>
+        <p><span>&#10074;</span> ódulo- Antena GPS externa interna y opcional</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><span>&#10074;</span> Módulo WiFi - 802.11 b/g/n</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><span>&#10074;</span> Pantalla LCD a color de 2,4"</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><span>&#10074;</span> Batería LiPo de 2000 mAh. Hasta 8 horas de uso </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><span>&#10074;</span> USB Tipo C. 2 horas de tiempo de carga</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><span>&#10074;</span> Memoria Flash capaz de almacenar hasta 400 sesiones de carreras</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><span>&#10074;</span> Acelerómetro de alta precisión </p>
+      </li>
+    </ul>
+
+    <hr>
+    <p><strong>PUSH SmartGauge Motorcycle Trackday Telemetry System </strong></p>
+
+    <p class="image-title"><em> <strong>Figura 4.</strong> SmartGauge.</em>
+    </p>
+    <img class="figure" src="images/SmartGauge.png" alt="">
+    <p class="image-title">Fuente: Push sitio web.</p>
+
+
+    <p>El PUSH SmartGauge para motocicletas es un registrador de datos de pista de carreras y una herramienta de
+      entrenamiento de alta tecnología que proporciona a la perfección telemetría de nivel profesional y tecnología de
+      visualización de vueltas en 3D a los entusiastas de los circuitos y los corredores de clubes. Después de una
+      extensa investigación, desarrollo y pruebas de pista en el mundo real. </p>
+
+    <hr>
+
+    <p><strong>BRAIN Dose Performance Tracking Telemetry System for Motorcycles </strong></p>
+    <img class="figure" src="images/Figura3.PNG" alt="">
+    <p>Brain Dose es un dispositivo inalambrico y no intrusivo que se adiere a la motocicleta para sensar diferentes
+      varaibles, cuenta con un procesador y un GPS de gran rendimiento que le permite tener una prescion superior,
+      ademas integra una bateria que garantiza un dia entero de grabacion de datos complementado con 4GB de memoria.
+      Para transmitir toda esta informacion ofrece comunicacion en vivo por medio de WIFI y Bluetooth 4.0. En cuanto a
+      las especificaciones fisicas ofrece una carcasa en policarbonato IP 65 resistente a los golpes y el polvo. </p>
+
+
+    <hr>
+    <p><strong>Trail tech vapor</strong></p>
+    <img class="figure" src="images/Figura4.PNG" alt="">
+    <p>El panel de informacion Vapor es una opción popular para los entusiastas de la carretera y fuera de ella. La gran
+      pantalla con gráficos de barras del tacómetro digital de Vapor es fácil de leer. Con un tamaño adecuado de 4.2 x
+      2.3 pulgadas, Vapor es perfecto para todo tipo de conducción como cross country, trail o en la pista. Las
+      características principales incluyen un gráfico de RPM y lectura de velocidad, con muchos más datos integrados. En
+      la parte superior, las luces LED programables parpadean cuando es el momento de cambiar de marcha o durante un
+      evento como exceso de temperatura. </p>
+    <hr>
+
+    <h2>Científicos: Artículos de conferencias y revistas.</h2>
+    <p>En la página Knowledge, se encuentra publicado un artículo nombrado “Monitoreo de condición en motores de
+      combustión interna mono cilíndrico con base en adquisición y procesamiento de señales experimentales” escrito por
+      autores pertenecientes a las universidades Universidad Tecnológica de Pereira y Universidad Católica de Pereira,
+      donde plasman el proceso y resultados del monitoreo de un motor de combustión interna (MCI) mono cilíndrico
+      alimentado por combustible tipo diésel.
+      <br>
+      <br>
+      Para el monitoreo de este motor, los investigadores obtuvieron señales de vibraciones provenientes del bloque del
+      motor, presión en cámara y velocidad de rotación del cigüeñal. Estas señales fueron analizadas y procesadas
+      mediante FFT y regresión rígida.
+      <br>
+      <br>
+      El método de recolección de estas señales fue por medio de sensores experimentales (sensores de velocidad (sensor
+      inductivo combinado con una rueda fónica de 60 dientes), presión y vibración (acelerómetro)), los cuales se
+      ubicaron en la respectiva zona de análisis y se conectaron a un módulo de adquisición de datos para transmitirlos
+      hacia un computador. </p>
+
+    <p><span>&#10074;</span> <strong>Monitoreo de condición en motores de combustión interna mono cilíndrico con base en
+        adquisición y procesamiento de señales experimentales.</strong></p>
+
+    <p>Diseño de un sistema de adquisición de datos mediante un sensor de presión para medir la presión de la cámara de
+      combustión, un sensor inductivo combinado con una rueda fónica de 60 dientes para monitorear velocidad del
+      cigüeñal y un acelerómetro para medir las vibraciones en la culata del motor, todo esto implementado en un motor
+      Diesel mono cilíndrico y con ayuda de un módulo de adquisición de datos que transmite la información recolectada
+      hacia un computador. </p>
+
+    <p><span>&#10074;</span> <strong>Implementation of Motorcycle Monitoring Using Bluetooth with an Android-Based
+        Microcontroller Using Arduino. </strong></p>
+
+    <p>El diseño de un control de motor se ha implementado con un microcontrolador Arduino y se basa en Android para
+      diseñar un control motor ON/OFF en una motocicleta a través de bluetooth; de esta manera se puede controlar el
+      motor de forma remota o cerrar. El protocolo de comunicación de datos del equipo es a través de bluetooth
+      instalado en la motocicleta usando 6 o 12 voltios para sistemas de encendido, arrancadores, luces y otros
+      componentes eléctricos. </p>
+
+    <p><span>&#10074;</span> <strong>A robust method for collecting and processing the on-road instantaneous data of
+        fuel consumption and speed for motorcycles. </strong></p>
+
+    <p>Modelo de consumo de combustible: "Requiere la medición de datos en determinadas condiciones para obtener una
+      alta precisión del resultado" Esto indica la necesidad de crear un dispositivo que registre el consumo de
+      combustible en tiempo real y velocidad en carretera. Una manera de determina la velocidad es en función de la
+      velocidad de rotación de la rueda y su radio y la tasa de consumo de combustible midiendo el pulso de inyección de
+      duración. </p>
+
+    <p><span>&#10074;</span> <strong>Pothole detection system design with proximity sensor to provide motorcycle with
+        warning system and increase road safety driving. </strong></p>
+
+    <p>El estado de la carretera en Antioquia y muchos lugares de nuestro país determina un peligro para los distintos
+      conductores, lo cual, según muchas cifras de la gobernación y la alcaldía, determinan un crecimiento en accidentes
+      debido a estas condiciones. Para evitar que ocurran accidentes se puede implementar un sensor de proximidad para
+      la detección de baches en la motocicleta, en este sistema se utiliza una cámara y el proceso de imágenes
+      digitales. </p>
+
+    <p><span>&#10074;</span> <strong>Evolving End to End Telemetry Systems to Meet the Challenges of Softwarized
+        Environments </strong></p>
+
+    <p>En la actualidad los datos obtenidos con el fin de realizar telemetría se tratan como datos separados y por lo
+      tanto se envían todos estos datos. Lo que puede resultar en mayor poder computacional. En esta conferencia se
+      explora la posibilidad de tratar los datos por jerarquías y usando modelos de machine learning para realizar un
+      preprocesamiento de estos datos, antes de enviarlos inalámbricamente. </p>
+
+    <p><span>&#10074;</span> <strong>Vehicle engine idle speed control.</strong></p>
+
+    <p>Un sensor de velocidad del vehículo detecta una velocidad de rotación de una rueda trasera. Una válvula de
+      mariposa está colocada en una ubicación aguas abajo de una tubería de admisión. Un dispositivo de control de
+      velocidad en vacío controla la cantidad de aire que fluye a través del tubo de admisión para realizar un control
+      de velocidad en vacío. Una ECU detecta una anomalía del dispositivo de control de velocidad en vacío basándose en
+      la presión de la tubería de admisión. La ECU impide que la velocidad de rotación del motor aumente cuando se
+      determina una anomalía del dispositivo de control de la velocidad de ralentí. </p>
+
+    <h2>Tesis</h2>
+
+    <p><strong>Uso de Raspberry Pi para obtener datos de bicicletas y motocicletas. </strong></p>
+    <br>
+    <p>En Joanneum University of Applied Sciences en Graz, Austria. Se realiza en 2015 un proyecto de obtener datos de
+      una bicicleta para su posterior análisis. Estos datos incluyen radio de giro, velocidad, aceleración y posición de
+      GPS. Este proyecto se plantea realizar utilizando una Raspberry Pi para la recolección de datos. </p>
+    <br>
+    <p><strong>Sensores</strong></p>
+    <br>
+    <p>Hall effect sensor: usado para la recolección de los datos de la velocidad. Este sensor envía una señal digital
+      la cual se puede leer directamente por el Raspberry Pi. Uno de los grupos utilizo directamente la señal del ABS
+      para recolectar estos datos.
+      <br>
+      <br>
+      PC20BU rotary potentiometer: usado para medir los ángulos del manubrio, luego un convertidor de análogo a digital
+      (ADC) fue usado para convertir la señal y que el Raspberry Pi pueda leerla.
+      <br>
+      <br>
+      GPS sensor: usado para tomar los datos de la posición de la bicicleta o motocicleta, el utilizado por los equipos
+      fue el Adafruit Ultimate GPS Breakout, ya que resulto ser el mejor en costo y precisión. </p>
+    <br>
+    <p><strong>Programación</strong></p>
+    <br>
+    <p>Los proyectos fueron programados utilizando Python ya que se utilizó el Raspberry Pi y este trae paquetes
+      disponibles para controlar los pines GPIO. </p>
+    <br>
+
+
+    <p><strong>Transmisión de datos </strong></p>
+    <p>Los datos obtenidos terminan en archivos de texto, los cuales el Raspberry Pi los hace disponibles para el
+      análisis em otro computador por medio de un Lighttpd web server. Se uso un smartphone como un punto de acceso
+      móvil. El Raspberry Pi y el computador fueron configurados de tal forma que se conecten automáticamente por medio
+      de DHCP con la red WiFi. </p>
+
+    <p>Otro grupo uso el Raspberry Pi como un punto de conexión inalámbrico. <a
+        href="https://www.raspberry-pi-geek.com/Archive/2016/16/Use-the-Rasp-Pi-to-log-data-from-bicycles-and-motorcyles ">(Más
+        Información).</a>
+    </p>
+    <h2>Ingeniería Inversa</h2>
+
+    <p>En este proyecto debido a que ya se cuenta con una moto hibrida en las instalaciones de la universidad, se desea
+      analizar la motocicleta con el fin de identificar el espacio disponible y evaluar posibles montajes para los
+      sensores. </p>
+    <img class="figure" src="images/IngInv1.PNG" alt="">
+    <p>Al analizarla nos encontramos que hay varios sensores ya instalados, por lo que es posible evaluar su efectividad
+      y tenerlos en cuenta para la obtención de datos para la telemetría. </p>
+    <br>
+    <p>En las siguientes ilustraciones mostramos algunos sensores ya instalados: </p>
+    <div class="container">
+      <div class="row ">
+        <div class="col col-lg-6 col-md-12 col-sm-1 ">
+          <img src="images/IngInv2.PNG" alt="">
+          <p>Sensor de Embrague</p>
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-1">
+          <img src="images/IngInv3.PNG" alt="">
+          <p>Sensor de posición del acelerador</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-6 col-md-12 col-sm-1">
+          <img src="images/IngInv4.PNG" alt="">
+          <p>Sensor de velocidad</p>
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-1">
+          <img src="images/IngInv5.PNG" alt="">
+          <p>Los demás sensores, el computador (Raspberry Pi, o Arduino) y los
+            transmisores inalámbricos se acomodarán debajo del asiento. </p>
+        </div>
+
+      </div>
+    </div>
+
+    <h2></h2>
+
+  </section>
+
+
+  <section id="PDS">
+
+    <h1>PDS</h1>
+
+    <h2>Cliente</h2>
+    <p>Nuestro cliente es Santiago Echavarría Correa quien está trabajando en el proyecto <strong>Energética
+        2030</strong> sobre
+      movilidad sostenible y desarrollo un Kit de conversión a tracción eléctrica para movilidad terrestre y requiere
+      Diseñar y fabricar un equipo de telemetría para las variables estándar de la motocicleta de combustión interna.
+    </p>
+
+    <p>A continuación, se muestra la tabla PDS.</p>
+
+
+    <table class="table table-hover table-pds">
+      <thead class="thead-primary">
+        <tr class="table-primary">
+          <th scope="col">Importancia</th>
+          <th scope="col">Categoria del requerimiento</th>
+          <th scope="col">Necesidad</th>
+          <th scope="col">Requerimiento</th>
+          <th scope="col">Variable</th>
+          <th scope="col">Unidades</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Prioridad</th>
+          <th scope="col">Orígen</th>
+          <th scope="col">Verificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>3</th>
+          <td>PROCESS</td>
+          <td>Qué sea una instalación rápida</td>
+          <td>Tiempo de instalación</td>
+          <td>Tiempo</td>
+          <td>min</td>
+          <td> t< 60 </td> <td>Deseo</td>
+          <td>Equipo</td>
+          <td>Cronómetro</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>PROCESS</td>
+          <td>Qué no se hagan modificaciones fisicas a la motocicleta </td>
+          <td>No es intrusivo</td>
+          <td>Numero de modificaciones</td>
+          <td>Unidades </td>
+          <td>M< 2</td> <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Número de modificaciones</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>SIZE</td>
+          <td>Qué no ocupe mucho espacio </td>
+          <td>Es compacto y adaptable adecuado para las motos de bajo cc</td>
+          <td>Volumen</td>
+          <td> m^3 </td>
+          <td>V< 0.15m^3</td> <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Calibrador</td>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td>PROCESS</td>
+          <td>Qué envie los datos de forma inalámbrica </td>
+          <td>Cuenta con un dispositivo IoT</td>
+          <td>Frecuencia</td>
+          <td> GHz </td>
+          <td>400-500 GHz</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Transferencia exitosa</td>
+        </tr>
+
+        <tr>
+          <th>2</th>
+          <td>WEIGHT</td>
+          <td>Qué no sea muy pesado</td>
+          <td>El peso de los sensores y controladores es adecuado para las motos de bajo cc</td>
+          <td>Masa</td>
+          <td> g </td>
+          <td>w< 1000g</td> <td>Deseo</td>
+          <td>Equipo</td>
+          <td>Balanza</td>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td>DATA</td>
+          <td>Qué mida las revoluciones del motor </td>
+          <td>Cuenta con un sensor de rpm</td>
+          <td>Pulsos</td>
+          <td> rpm </td>
+          <td>0-12000</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Light beam measure tester</td>
+        </tr>
+
+        <tr>
+          <th>3</th>
+          <td>MAINTENANCE</td>
+          <td>Que las piezas se puedan reemplazar facilmente </td>
+          <td>Los componentes son asequibles</td>
+          <td>Costo</td>
+          <td> $ </td>
+          <td>C < 200000</td> <td>Demanda</td>
+          <td>Equipo</td>
+          <td>Cotización y disponibilidad</td>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td>DATA</td>
+          <td>Qué pueda medir el consumo de combustible</td>
+          <td>Cuenta con un sensor de nivel de combustible</td>
+          <td>Volumen por distancia recorrida</td>
+          <td>gal/km</td>
+          <td>-</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Recipiente</td>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td>DATA</td>
+          <td>Qué mida la aceleración </td>
+          <td>Cuenta con un acelerómetro</td>
+          <td>Aceleración</td>
+          <td>m/s^2</td>
+          <td>-</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Acelerómetro</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>DATA</td>
+          <td>Qué mida el accionamiento del frenado</td>
+          <td>Switch de freno</td>
+          <td>On/Off</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Multimétro</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>DATA</td>
+          <td>Qué mida el angulo de la moto con respecto a la tierra</td>
+          <td>Cuenta con nivel</td>
+          <td>Ángulo</td>
+          <td>Grados</td>
+          <td>0-180</td>
+          <td>Demanda</td>
+          <td>Equipo</td>
+          <td>Goniométro</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>DATA</td>
+          <td>Qué mida la posicion del acelerador</td>
+          <td>Cuenta con TPS</td>
+          <td>Ángulo</td>
+          <td>Grados</td>
+          <td>0-180</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Goniométro</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>DATA</td>
+          <td>Qué se sepa cuando la moto esta encendida</td>
+          <td>Cuenta con Sensor de encendio</td>
+          <td>On/Off</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>Multimétro</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>DATA</td>
+          <td>Qué se sepa la posición de la moto</td>
+          <td>Cuenta con dispositivo GPS</td>
+          <td>Ubicación</td>
+          <td>Lat/Long</td>
+          <td>(-90)-90 (-180)-180</td>
+          <td>Demanda</td>
+          <td>Cliente</td>
+          <td>GPS</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>COST</td>
+          <td>Qué no sea muy caro</td>
+          <td> El dispositivo es de costo ideal para vehículos económicos (bajos cilindrajes)</td>
+          <td>Costo</td>
+          <td>$</td>
+          <td>$< 500000</td> <td>Deseo</td>
+          <td>Cliente</td>
+          <td>Cotización del proyecto</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </section>
+
+
+  <section id="alcance">
+
+    <h1>Alcance del Proyecto</h1>
+    <br>
+    <br>
+
+    <p>Se busca implementar un sistema de sensores no invasivo, que recolecten los datos más significativos del
+      funcionamiento de una motocicleta de combustión interna, teniendo en cuenta las variables del entorno y tener
+      datos que una vez procesados puedan ser utilizados para mejorar el rendimiento de la moto, utilizando
+      microcontroladores que permitan la extracción de la data y la transmisión inalámbrica de estos, entre ellos
+      encontramos( Raspberry Pi, Arduino u otros chips ), los cuales son compatibles con una amplia gama de sensores.
+      Los datos recolectados se pueden almacenar en una base de datos de uso libre como SQLite, MySQL o Mongo DB, para
+      posteriormente mostrarlos luego en una aplicación móvil, la cual se puede realizar con el framework Flutter, que
+      permite desarrollar aplicaciones nativas tanto para sistemas como Android y IOS. </p>
+
+  </section>
+
+
+
+  <section id="Equipo">
+
+    <h1>Equipo de Trabajo</h1>
+
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <i class="fa fa-motorcycle"></i>
+            <p>
+              <em><strong>Área encargada: </strong></em>
+              <br>
+              <em> <strong>Cualidades: </strong>Proactivo, deseo de aprender, persistente, constante</em>
+              <br>
+              <em> <strong>Motivación: </strong>Robótica y automatización</em>
+              <br>
+              <em><strong>Experiencia: </strong>Integrante del semillero ARES y exintegrante del carro solar Kratos</em>
+            </p>
+            <div class="rating">
+
+            </div>
+            <img src="images/miguel.jpeg" alt="">
+            <h3>Miguel Castaño Marín<br><br> Ing. Mecánica</h3>
+          </div>
+          <div class="col-5">
+            <i class="fa fa-motorcycle"></i>
+            <p>
+              <em><strong>Área encargada: </strong></em>
+              <br>
+              <em> <strong>Cualidades: </strong>Propositivo, abierto al cambio, conciliador, bueno para delegar y
+                trabajar en equipo, curioso.</em>
+              <br>
+              <em> <strong>Motivación: </strong>Las cosas bien hechas, bonitas y consientes.</em>
+              <br>
+              <em><strong>Experiencia: </strong>Diseño y desarrollo de un spray dryer para fragancias, Diseño y
+                manufactura de Roadbooks para rally raid, Asistente de ing. en i3D. </em>
+            </p>
+            <div class="rating">
+
+            </div>
+            <img src="images/losada.jpeg" alt="">
+            <h3>Santiago Losada Muñoz<br><br> Ing. Diseño de Producto</h3>
+          </div>
+          <div class="col-5">
+            <i class="fa fa-motorcycle"></i>
+            <p>
+              <em><strong>Área encargada: </strong></em>
+              <br>
+              <em> <strong>Cualidades: </strong>Resolución de problemas, trabajo en equipo, deseo de aprender</em>
+              <br>
+              <em> <strong>Motivación: </strong>Automatización y funciones de máquinas </em>
+              <br>
+              <em><strong>Experiencia: </strong>Exintegrante de Condor Hyperloop EAFIT</em>
+            </p>
+            <div class="rating">
+
+            </div>
+            <img src="images/sebastian.jpeg" alt="">
+            <h3>Sebastián Zúñiga Zuluaga<br><br> Ing. Mecánica</h3>
+          </div>
+          <div class="col-5">
+            <i class="fa fa-motorcycle"></i>
+            <p>
+              <em><strong>Área encargada: </strong></em>
+              <br>
+              <em> <strong>Cualidades: </strong>Meticuloso, Creativo, Pensamiento critico</em>
+              <br>
+              <em> <strong>Motivación: </strong>Iot, robótica </em>
+              <br>
+              <em><strong>Experiencia: </strong>Aplicativos web, productos iot</em>
+            </p>
+            <div class="rating">
+
+            </div>
+            <img src="images/oritz.jpeg" alt="">
+            <h3>Santiago Ortiz Cano <br></br> Ing. Sistemas </h3>
+          </div>
+          <div class="col-5">
+            <i class="fa fa-motorcycle"></i>
+            <p>
+              <em><strong>Área encargada: </strong></em>
+              <br>
+              <em> <strong>Cualidades: </strong>Trabajo en equipo, resiliencia, proactivo, diversidad de conocimientos</em>
+              <br>
+              <em> <strong>Motivación: </strong>Robótica, Iot, Arduino, Labview </em>
+              <br>
+              <em><strong>Experiencia: </strong>Experiencia de un año como progrmador en Python y JavaScript, dos años de
+                experiencia con  proyectos en Arduino </em>
+            </p>
+            <img src="images/rma.PNG" alt="">
+            <h3>Rafael Eduardo Monsalve <br><br> Ing. Mecánica </h3>
+            <div class="rating">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section id="referencias">
+    <h1>Referencias</h1>
+
+  </section>
+
+  <section id="footer">
+    <p class="footer-text">© EAFIT</p>
+    <p class="footer-text"> 2021</p>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src='index.js' charset='utf-8'></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+
+</html>
