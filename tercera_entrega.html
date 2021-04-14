@@ -63,7 +63,7 @@
     </section>
 
 
-    <h1>PDS V2</h1>
+    <h1>PDS V3</h1>
     <table class="table table-hover table-pds">
         <thead class="thead-primary">
             <tr class="table-primary">
@@ -385,7 +385,66 @@
         </tbody>
     </table>
 
-</section>
+    </section>
+    <h1>Diseño para la confiabilidad</h1>
+    <section id="FMECA">
+        <table class="table table-hover table-fmeca">
+            <thead class="thead-primary">
+                <tr class="table-primary">
+                    <th scope="col">Función</th>
+                    <th scope="col">Mode de Fallo</th>
+                    <th scope="col">Efectos del Fallo</th>
+                    <th scope="col">Causas de Fallo</th>
+                    <th scope="col">Detección</th>
+                    <th scope="col">S</th>
+                    <th scope="col">O</th>
+                    <th scope="col">D</th>
+                    <th scope="col">RPN</th>
+                    <th scope="col">Acción Correctiva</th>
+                    <th scope="col">S</th>
+                    <th scope="col">O</th>
+                    <th scope="col">D</th>
+                    <th scope="col">RPN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Sellado hermético del sistema</th>
+                    <td>Filtración de Humedad</td>
+                    <td>Daño de componentes</td>
+                    <td>Corto circuito</td>
+                    <td>Deja de funcionar</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>1<br>9<br>2</td>
+                    <td>Proteger componentes principales,<br>con adición de silicona en <br> áreas donde se pueda filtrar el
+                        agua. <br>
+                        También colocar papel indicador <br> cobalto cloruro <br> para identificar la filtración de agua. </td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1 <br>8</td>
+                </tr>
+                <tr>
+                    <th>Recolección de datos</th>
+                    <td>Altas temperaturas </td>
+                    <td>Discrepancia en las lecturas</td>
+                    <td>Datos erróneos </td>
+                    <td>Incoherencia </td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>2<br>1<br>0</td>
+                    <td>Aislamiento térmico <br> de los sensores expuestos.  </td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1 <br>8</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
 
 
