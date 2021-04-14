@@ -56,7 +56,16 @@ span {
 }
 
 .figure {
-    width:35%;
+    width:45%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.figure_cal{
+    width: 15%;
     margin-top: 40px;
     margin-bottom: 30px;
     display: block;
@@ -106,10 +115,10 @@ span {
 }
 
 .testimonial .col-5 img{
-    width:90px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius:50%;
+    width:90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:2%;
 }
 
 .testimonial .col-5:hover{
@@ -125,6 +134,10 @@ span {
     font-size:12px;
     margin:12px 0;
     color:#777;
+}
+
+.inter{
+    margin-left: 1%;
 }
 
 .testimonial .col-5 h3{

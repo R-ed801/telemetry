@@ -34,28 +34,10 @@
                         <a class="nav-link" href="#PDSV3">PDS V3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#CajaNegra">Caja Negra - Caja Transparente</a>
+                        <a class="nav-link" href="#CajaNegra">FMECA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Descripcion">Table de Descripcion Funcional</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Morfologica">Matriz Morfologica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Bocetos">Bocetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#analisis">Analisis de Seleccion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#disenofinal">Diseño Final</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pid">P&ID</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cronograma">Cronograma</a>
+                        <a class="nav-link" href="#Descripcion">Componentes</a>
                     </li>
                 </ul>
             </div>
@@ -912,11 +894,97 @@
                     <td>1376.1</td>
                 </tr>
             </tbody>
+        </table>
+        <h2>Calculos de interfaces</h2>
+        <div class="inter">
+            <img class="figure" src="images/inter1.PNG" alt="">
+            <img class="figure_cal" src="images/inter1_cal.PNG" alt="">
+
+            <img class="figure" src="images/inter2.PNG" alt="">
+            <img class="figure_cal" src="images/inter2_cal.PNG" alt="">
+        </div>
+
+        <h2>Ubicación</h2>
+        <img class="figure" src="images/ubicaionComp.PNG" alt="">
+
+        <h2>Conexiones</h2>
+        <p>En el siguiente diagrama se muestran las conexiones de los componentes. </p>
+        <img class="figure" src="images/conections_schem.png" alt="">
+
+        <h2>Plano Eléctrico</h2>
+        <img class="figure" src="images/parts.png" alt="">
 
     </section>
 
+    <section id="Programación">
+        <h1>Programación</h1>
+        <h2>Código</h2>
+        <p>En el código, tenemos 2 partes, una encargada de la recepción de la información de los sensores (Arduino
+            mega), que trabaja como esclavo para el esp8266, este actualiza y envía los datos según el esp8266 los vaya
+            pidiendo, y por el lado del esp8266(maestro), va pidiendo y recibiendo datos, para luego mostrarlos en la
+            propia página que el genera. </p>
+    </section>
 
+    <section id="control">
+        <h1>Sistema de Control</h1>
+        <p>Para el sistema de control se va a utilizar un Arduino Mega debido a la numerosa cantidad de sensores con los
+            que contamos mencionados anteriormente, estos se conectan de diferentes maneras (Comunicación serial, I2C,
+            Entradas Digitales/Análogas), que posteriormente son adecuadas y enviadas por i2c al módulo ESP8266 según
+            vaya pidiendo la información para luego enviarlo a un servidor, donde sea más simple la visualización de
+            cada sensor. </p>
 
+        <h2>P&ID</h2>
+        <img class="figure" src="images/pid.PNG" alt="">
+
+        <h2>MEF</h2>
+        <p>Para controlar el sistema se realizan las siguientes dos máquinas de estados finitos, una es para mostrar el
+            proceso del envío de datos y las otra es para recibir y almacenar los datos </p>
+        <img class="figure" src="images/mef_envio.PNG" alt="">
+        <img class="figure" src="images/mef_recibir.PNG" alt="">
+    </section>
+
+    <section id="render">
+        <h1>Render y vistas</h1>
+        <p>Algunos componentes se piensan almacenar en una caja especialmente diseñada para ellos por tal motivo a
+            continuación se muestran las vistas y el render de esta caja. </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render12.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render5.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>En esta unidad se encuentran los dispositivos de comunicación y procesamiento de datos tales como el Arduino,
+            WI-FI, GPS e interfaces. </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render10.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render7.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
