@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+
+<head>
+    <title>Telemetry</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,14 +15,392 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
 
-  
+
 </head>
-  <body>
-      
+
+<body>
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-letter fixed-top">
+            <a class="navbar-brand" href="home.html"><img src="" width="80px">Telemetry</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PDSV3">PDS V2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CajaNegra">Caja Negra - Caja Transparente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Descripcion">Table de Descripcion Funcional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Morfologica">Matriz Morfologica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Bocetos">Bocetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analisis">Analisis de Seleccion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#disenofinal">Diseño Final</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pid">P&ID</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cronograma">Cronograma</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <h1>PDS V2</h1>
+    <table class="table table-hover table-pds">
+        <thead class="thead-primary">
+            <tr class="table-primary">
+                <th scope="col">Importancia</th>
+                <th scope="col">Categoria del requerimiento</th>
+                <th scope="col">Necesidad</th>
+                <th scope="col">Requerimiento</th>
+                <th scope="col">Variable</th>
+                <th scope="col">Unidades</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Prioridad</th>
+                <th scope="col">Orígen</th>
+                <th scope="col">Verificación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>3</th>
+                <td>PROCESS</td>
+                <td>Qué sea una instalación rápida</td>
+                <td>Tiempo de instalación</td>
+                <td>Tiempo</td>
+                <td>min</td>
+                <td> t< 60 </td> <td>Deseo</td>
+                <td>Equipo</td>
+                <td>Cronómetro</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>PROCESS</td>
+                <td>Qué no se hagan modificaciones fisicas a la motocicleta </td>
+                <td>No es intrusivo</td>
+                <td>Numero de modificaciones</td>
+                <td>Unidades </td>
+                <td>M< 2</td> <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Número de modificaciones</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>SIZE</td>
+                <td>Qué no ocupe mucho espacio </td>
+                <td>Es compacto y adaptable adecuado para las motos de bajo cc</td>
+                <td>Volumen</td>
+                <td> m^3 </td>
+                <td>V< 0.15m^3</td> <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Calibrador</td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td>PROCESS</td>
+                <td>Qué envie los datos de forma inalámbrica </td>
+                <td>Cuenta con un dispositivo IoT</td>
+                <td>Frecuencia</td>
+                <td> GHz </td>
+                <td>400-500 GHz</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Transferencia exitosa</td>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <td>WEIGHT</td>
+                <td>Qué no sea muy pesado</td>
+                <td>El peso de los sensores y controladores es adecuado para las motos de bajo cc</td>
+                <td>Masa</td>
+                <td> g </td>
+                <td>w< 1000g</td> <td>Deseo</td>
+                <td>Equipo</td>
+                <td>Balanza</td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td>DATA</td>
+                <td>Qué mida las revoluciones del motor </td>
+                <td>Cuenta con un sensor de rpm</td>
+                <td>Pulsos</td>
+                <td> rpm </td>
+                <td>0-12000</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Light beam measure tester</td>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <td>MAINTENANCE</td>
+                <td>Que las piezas se puedan reemplazar facilmente </td>
+                <td>Los componentes son asequibles</td>
+                <td>Costo</td>
+                <td> $ </td>
+                <td>C < 200000</td> <td>Demanda</td>
+                <td>Equipo</td>
+                <td>Cotización y disponibilidad</td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td>DATA</td>
+                <td>Qué pueda medir el consumo de combustible</td>
+                <td>Cuenta con un sensor de nivel de combustible</td>
+                <td>Volumen por distancia recorrida</td>
+                <td>gal/km</td>
+                <td>-</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Recipiente</td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td>DATA</td>
+                <td>Qué mida la aceleración </td>
+                <td>Cuenta con un acelerómetro</td>
+                <td>Aceleración</td>
+                <td>m/s^2</td>
+                <td>-</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Acelerómetro</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>DATA</td>
+                <td>Qué mida el accionamiento del frenado</td>
+                <td>Switch de freno</td>
+                <td>On/Off</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Multimétro</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>DATA</td>
+                <td>Qué mida el angulo de la moto con respecto a la tierra</td>
+                <td>Cuenta con nivel</td>
+                <td>Ángulo</td>
+                <td>Grados</td>
+                <td>0-180</td>
+                <td>Demanda</td>
+                <td>Equipo</td>
+                <td>Goniométro</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>DATA</td>
+                <td>Qué mida la posicion del acelerador</td>
+                <td>Cuenta con TPS</td>
+                <td>Ángulo</td>
+                <td>Grados</td>
+                <td>0-180</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Goniométro</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>DATA</td>
+                <td>Qué se sepa cuando la moto esta encendida</td>
+                <td>Cuenta con Sensor de encendio</td>
+                <td>On/Off</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Multimétro</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>DATA</td>
+                <td>Qué se sepa la posición de la moto</td>
+                <td>Cuenta con dispositivo GPS</td>
+                <td>Ubicación</td>
+                <td>Lat/Long</td>
+                <td>(-90)-90 (-180)-180</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>GPS</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>COST</td>
+                <td>Qué no sea muy caro</td>
+                <td> El dispositivo es de costo ideal para vehículos económicos (bajos cilindrajes)</td>
+                <td>Costo</td>
+                <td>$</td>
+                <td>$< 500000</td> <td>Deseo</td>
+                <td>Cliente</td>
+                <td>Cotización del proyecto</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>MANUFACTURING FACILITY</td>
+                <td>Que se pueda manufacturar en la universidad</td>
+                <td> El dispositivo pueder ser manufacturado en las instalaciones de la universidad</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Demanda</td>
+                <td>Equipo</td>
+                <td>Equipos de manufactura U.EAFIT</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>SAFETY</td>
+                <td>Que la información quede protegida</td>
+                <td>Encriptado</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Deseo</td>
+                <td>Equipo</td>
+                <td>Clave de seguridad</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>EVIROMENT</td>
+                <td>Que se resistente al ambiente externo</td>
+                <td>El dispositvo debe de soportar cambios de temperatura y humedad</td>
+                <td>Grados/Humedad</td>
+                <td>°C/%</td>
+                <td>-50°-100°/0-100%</td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>Baja Corrosion/sin altas temperaturas</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>PROCESS</td>
+                <td>Que transfiera los datos de forma ágil</td>
+                <td>El dispositivo cuenta con un alta frecuencia para la transferencia de datos</td>
+                <td>Frecuencia</td>
+                <td>GHz</td>
+                <td>2-5Hz</td>
+                <td>Deseo</td>
+                <td>Equipo</td>
+                <td>Recepcion de datos</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>QUALITY AND RELIABILITY</td>
+                <td>Que sea confiable</td>
+                <td>El dispositivo es confiable</td>
+                <td>Garantia</td>
+                <td>Meses</td>
+                <td> >6</td>
+                <td>Demanda</td>
+                <td>Equipo</td>
+                <td>Constante eficacia y funcionalidad a lo largo del tiempo</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>MANUFACTURING FACILITY</td>
+                <td>Que se pueda replicar</td>
+                <td>Se debe poder manufacturar mas de uno en poco tiempo</td>
+                <td>Tiempo</td>
+                <td>Dia</td>
+                <td>
+                    < 1 </td> <td>Demanda
+                </td>
+                <td>Equipo</td>
+                <td>Reutilizacion de moldes, y/o procesos automatizados</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>MAINTENANCE</td>
+                <td>Que el mantenimiento no sea muy frecuente</td>
+                <td>Los intrumentos equipados no requieran mayor intervención</td>
+                <td>Frecuencia</td>
+                <td>1/año</td>
+                <td> 1 </td>
+                <td>Deseo</td>
+                <td>Equipo</td>
+                <td>Desempeño</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>MATERIALS</td>
+                <td>Que sea resistente al agua</td>
+                <td>EL dispositivo debe ser hermetico</td>
+                <td>Humedad</td>
+                <td>%</td>
+                <td> 0-20% </td>
+                <td>Demanda</td>
+                <td>Cliente</td>
+                <td>No ver corrocion al abrir los sensores/controles</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>PRODUCT LIFE SPAN</td>
+                <td>Que dure varios años</td>
+                <td>EL dispositivo tiene durabilidad</td>
+                <td>Tiempo</td>
+                <td>Años</td>
+                <td> >2 </td>
+                <td>Deseo</td>
+                <td>Cliente</td>
+                <td>% de degradacion de los diferentes componentes a lo largo del tiempo</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>COST</td>
+                <td>Que no sea muy costoso operarlo</td>
+                <td>Costo de operacion bajo</td>
+                <td>Mensualidad</td>
+                <td>Pesos/mes</td>
+                <td> $60000 </td>
+                <td>Deseo</td>
+                <td>Equipo</td>
+                <td>Cotización/ consumos/planes</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</section>
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
