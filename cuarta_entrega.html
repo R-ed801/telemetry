@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Telemetry</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body id="CuartaEntrega">
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-letter fixed-top">
+            <a class="navbar-brand" href="home.html"><img src="" width="80px">Telemetry</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comp">Componentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planos">Planos de Detalle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subsis">Subsistemas y Verficación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FMECA">FMECA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CADo">CAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#simu">Simulaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclu">Conslusiones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section id="comp">
+        <h1 class="compTitle">Componentes</h1>
+        <br>
+
+        <table class="table table-hover table-pds">
+            <thead class="thead-primary">
+                <tr class="table-primary">
+                    <th scope="col">Variable</th>
+                    <th scope="col">Componente</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Consumo <br> de Energía(mA/h)</th>
+                    <th scope="col">Voltaje(V)</th>
+                    <th scope="col">Potencia(wh)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Fuente de energía eléctrica</th>
+                    <td>Batería Moto</td>
+                    <td>$-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Señal de encendido</th>
+                    <td>Derivar Señal</td>
+                    <td>$-</td>
+                    <td>-</td>
+                    <td>12</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Señal de clutch</th>
+                    <td>Endstop</td>
+                    <td>$ 2.500,00</td>
+                    <td>-</td>
+                    <td>5</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Señal de Freno</th>
+                    <td>Endstop</td>
+                    <td>$-</td>
+                    <td>-</td>
+                    <td>12</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Hall RPM Rueda delantera </th>
+                    <td>Sensor electromagnético </td>
+                    <td>$ 20.000,00</td>
+                    <td>0.3</td>
+                    <td>5</td>
+                    <td>0.0015</td>
+                </tr>
+                <tr>
+                    <th>Flujo de combustible</th>
+                    <td>g1/2 metálico </td>
+                    <td>$ 43.000,00</td>
+                    <td>-</td>
+                    <td>5</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Presión Admisión</th>
+                    <td>MPX5100</td>
+                    <td>$ 75.000,00</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>0.035</td>
+                </tr>
+                <tr>
+                    <th>Presión Barométrica </th>
+                    <td>BME280</td>
+                    <td>$ 16.000,00</td>
+                    <td>0.3</td>
+                    <td>5</td>
+                    <td>0.0015</td>
+                </tr>
+                <tr>
+                    <th>Posición acelerador</th>
+                    <td>Potenciométro</td>
+                    <td>$ 15.000,00</td>
+                    <td>15</td>
+                    <td>5</td>
+                    <td>0.075</td>
+                </tr>
+                <tr>
+                    <th>Reguladorr</th>
+                    <td>Fuente DC-DC Regulador 5A</td>
+                    <td>$ 8.000,00</td>
+                    <td>30</td>
+                    <td>12</td>
+                    <td>0.36</td>
+                </tr>
+                <tr>
+                    <th>Temperatura de Escape</th>
+                    <td>Sensor de temperatura infrarrojo MLX90614</td>
+                    <td>$ 50.000,00</td>
+                    <td>2.50</td>
+                    <td>5</td>
+                    <td>0.0125</td>
+                </tr>
+                <tr>
+                    <th>RPM cigüeñal</th>
+                    <td>SCT-013-030 </td>
+                    <td>$ 32.000,00</td>
+                    <td>-</td>
+                    <td>12</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Lambda</th>
+                    <td>Lambda universal 4 cables</td>
+                    <td>$ 109.000,00</td>
+                    <td>1000</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>GPS</th>
+                    <td>GY-NEO6MV2</td>
+                    <td>$ 15.000,00</td>
+                    <td>67</td>
+                    <td>5</td>
+                    <td>0.035</td>
+                </tr>
+                <tr>
+                    <th>Procesador</th>
+                    <td>Arduino Mega</td>
+                    <td>$ 58.000,00</td>
+                    <td>94</td>
+                    <td>9</td>
+                    <td>0.846</td>
+                </tr>
+                <tr>
+                    <th>Procesador</th>
+                    <td>PCB</td>
+                    <td>$ 20.000,00</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Envio de datos</th>
+                    <td>ESP8266</td>
+                    <td>$ 10.000,00</td>
+                    <td>170</td>
+                    <td>5</td>
+                    <td>0.85</td>
+                </tr>
+                <tr>
+                    <th>Visualización de datos</th>
+                    <td>Sitio web</td>
+                    <td>$-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Conector</th>
+                    <td>Conector De 14 Pines A1358 </td>
+                    <td>$ 70.000,00</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Cables</th>
+                    <td>Cables</td>
+                    <td>$ 5.000,00</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Carcasa</th>
+                    <td>Impresion 3D</td>
+                    <td>$ 80.000,00</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td>$ 628.500,00</td>
+                    <td>1376.1</td>
+                    <td>14.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Usaremos 14.4 metros de cable AWG 22 y 1.8 metros de cable AWG 18 para todo el sistema, para la protección
+            organización los cables van dentro de una funda trenzada que permite flexibilidad y poder separar los cables
+            fácilmente, además usamos termo encogible para partes específicas. En cuanto a las conexiones usaremos
+            conectores impermeables aéreos para garantizar la protección. </p>
+
+        <img class="figure" src="images/cables.PNG" alt="">
+        <h2>Conexiones</h2>
+        <p>En el siguiente diagrama se muestran las conexiones de los componentes. </p>
+        <img class="figure" src="images/conections_schem.png" alt="">
+
+        <h2>Plano Eléctrico</h2>
+        <img class="figure" src="images/parts.png" alt="">
+
+    </section>
+
+    <section id="planos">
+        <h1>Planos de Detalle</h1>
+        <p>Planos de detalle, Descargue el archivo PDF dando click <a target="_blank"
+                href="docs/Carcasa v2.0.pdf">aquí</a></p>
+    </section>
+    <section id="Subsis">
+        <h1>Subsistemas y Verificación</h1>
+        <h2>Control</h2>
+        <p>Verificación de linealidad en la regulación del voltaje</p>
+        <img class="figure" src="images/reguladorV.PNG" alt="">
+        <p>A la izquierda tenemos 12.6V que arroja la batería de la moto cuando esta apagada y a la derecha 14.3V cuando
+            la moto está encendida. </p>
+        <img src="" alt="">
+        <img class="figure" src="images/reguladorbateria.PNG" alt="">
+        <h2>Sensores</h2>
+        <p>Consumo de algunos sensores 32.5mA (no incluido los controladores). </p>
+        <img class="figure" src="images/corriente.PNG" alt="">
+        <h2>Envio</h2>
+        <p>Consumo de Esp8266 es de 75mA</p>
+        <img class="figure" src="images/envio.PNG" alt="">
+    </section>
+
+
+    <section id="FMECA">
+        <h1>FMECA</h1>
+
+        <table class="table table-hover table-fmeca">
+            <thead class="thead-primary">
+                <tr class="table-primary">
+                    <th scope="col">Función</th>
+                    <th scope="col">Mode de Fallo</th>
+                    <th scope="col">Efectos del Fallo</th>
+                    <th scope="col">Causas de Fallo</th>
+                    <th scope="col">Detección</th>
+                    <th scope="col">S</th>
+                    <th scope="col">O</th>
+                    <th scope="col">D</th>
+                    <th scope="col">RPN</th>
+                    <th scope="col">Acción Correctiva</th>
+                    <th scope="col">S</th>
+                    <th scope="col">O</th>
+                    <th scope="col">D</th>
+                    <th scope="col">RPN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Sellado hermético del sistema</th>
+                    <td>Filtración de Humedad</td>
+                    <td>Daño de componentes</td>
+                    <td>Corto circuito</td>
+                    <td>Deja de funcionar</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>192</td>
+                    <td>Proteger componentes principales,<br>con adición de silicona en <br> áreas donde se pueda
+                        filtrar el
+                        agua. <br>
+                        También colocar papel indicador <br> cobalto cloruro <br> para identificar la filtración de
+                        agua. </td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th>Recolección de datos</th>
+                    <td>Altas temperaturas </td>
+                    <td>Discrepancia en las lecturas</td>
+                    <td>Datos erróneos </td>
+                    <td>Incoherencia </td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>210</td>
+                    <td>Aislamiento térmico <br> de los sensores expuestos. </td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>56</td>
+                </tr>
+                <tr>
+                    <th>Recolección de datos </th>
+                    <td>Altas temperaturas </td>
+                    <td>Daño de sensores </td>
+                    <td>Corto circuito </td>
+                    <td>Deja de funcionar </td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>60</td>
+                    <td>Aislamiento térmico de <br> los sensores expuestos. </td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>24</td>
+                <tr>
+                    <th>Transmisión de datos </th>
+                    <td>Daños en los cables </td>
+                    <td>Ausencia de lectura</td>
+                    <td>Los cables se desgastan o se dañen </td>
+                    <td>Deja de funcionar </td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>Reforzar el recubrimiento de los cables en áreas críticas. </td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>Transferencia de los datos </th>
+                    <td>Envío de datos</td>
+                    <td>No hay recepción de los datos </td>
+                    <td>Modulo defectuoso o fallos en red </td>
+                    <td>Deja de enviar datos</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>12</td>
+                    <td>Chequear el estado de la red y reemplazar el módulo.</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Recolección de datos</th>
+                    <td>Instalación</td>
+                    <td>Mala lectura de datos </td>
+                    <td>Mala instalación </td>
+                    <td>Incoherencia </td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>168</td>
+                    <td>Verificar la instalación y los datos obtenidos. </td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="CADo">
+        <h1>Render y vistas</h1>
+        <p>Algunos componentes se piensan almacenar en una caja especialmente diseñada para ellos por tal motivo a
+            continuación se muestran las vistas y el render de esta caja. </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render12.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render5.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>En esta unidad se encuentran los dispositivos de comunicación y procesamiento de datos tales como el Arduino,
+            WI-FI, GPS e interfaces. </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render10.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render7.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>Para asegurar la impermeabilidad y protección a la intemperie usamos un o-ring para sellar la tapa y un
+            conector
+            especial para separar los componentes del exterior. </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render9.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render8.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Al interior Para optimizar el espacio y disminuir los cables usamos una PCB específica para el espacio y los
+            componentes usados. </p>
+
+        <h2>Montaje Tentativo</h2>
+        <p>Diseñamos 2 tipos de montaje para que el sistema sea lo más adaptable posible a las motos objetivo </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render2.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render6.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>Montaje Lateral: Diseñando para sujetarse de la parte lateral trasera de la moto por medio de 2 tornillos en
+            orificios de fábrica. </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render3.jpeg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/render4.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Base a tubo: Diseñada para ubicarla en la dirección de la motocicleta en caso de no tener otra opción. </p>
+    </section>
+
+    <section id="Programación">
+        <h1>Programación</h1>
+        <h2>Código</h2>
+        <p>En el código, tenemos 2 partes, una encargada de la recepción de la información de los sensores (Arduino
+            mega), que trabaja como esclavo para el esp8266, este actualiza y envía los datos según el esp8266 los vaya
+            pidiendo, y por el lado del esp8266(maestro), va pidiendo y recibiendo datos, para luego mostrarlos en la
+            propia página que el genera. </p>
+    </section>
+
+
+    <section id="conclu">
+        <h1>Conclusiones</h1>
+        <table class="table table-hover table-pds">
+            <thead class="thead-primary">
+                <tr class="table-primary">
+                    <th scope="col">Necesidad</th>
+                    <th scope="col">Requerimiento</th>
+                    <th scope="col">Cumplimiento</th>
+                    <th scope="col">Conclusion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Que sea una instalación rápida </th>
+                    <td>Tiempo de instalación </td>
+                    <td>90%</td>
+                    <td>Debido a que se requieren hacer cortes, y soldar algunos cables , aparte de destapar algunas
+                        partes de la moto, esto puede llevar a que la instalacion se prolongue(dependiendo de la moto).
+                    </td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que no se hagan modificación fisica a la motocicleta </th>
+                    <td>No es intrusivo </td>
+                    <td>80%</td>
+                    <td>Algunas de las variables que requieren ser leidas, para tener fiabilidad y una correcta lectura
+                        , se requiere el uso de sensores algo intrusivos(Freno,Señal encendido).</td>
+                </tr>
+                <tr>
+                    <th>Que no ocupe mucho espacio </th>
+                    <td>Es compacto y adaptable adecuado para las motos de bajo cc</td>
+                    <td>100%/td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que envie los datos de forma inalámbrica </th>
+                    <td>Cuenta con un dispositivo IOT </td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que no sea muy pesado </th>
+                    <td>El peso de los sensores y controladores sea adecuado para als motos de bajo cc </td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que mida las revoluciones del motor </th>
+                    <td>Cuenta con sensor de rpm </td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que las piezas se
+                        puedan reemplazar facilmente </th>
+                    <td>Los componentesson
+                        asequibles</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que pueda medir el consumo de combustible </th>
+                    <td>Cuenta con un sensor de nivel de combustible</td>
+                    <td>60%</td>
+                    <td>Se cuenta con el sensor en fisico , pero no ha podido ser utilziado debido a
+                        inconvenientes(pandemia)</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que mida la aceleración </th>
+                    <td>Cuenta con un acelerómetro</td>
+                    <td>70%</td>
+                    <td>Si bien el dispositivo no cuenta con acelerometro si podemos medir la aceleración utilizando
+                        datos ya obtenidos tales como la velocidad, posición y tiempo.</td>
+                </tr>
+                <tr>
+                    <th>Que mida el accionamiento del freno</th>
+                    <td>Switch de freno</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que mida el angulo de la moto con respecto a la tierra</th>
+                    <td>Cuenta con nivel</td>
+                    <td>0%</td>
+                    <td>Como el dispo</td>
+                </tr>
+                <tr>
+                    <th>Que mida la posicion
+                        del acelerador</th>
+                    <td>Cuenta con TPS </td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que se sepa cuando la moto esta encendida</th>
+                    <td>Cuenta con Sensor de encendio</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que se sepa la geolocalizacion de la moto</th>
+                    <td>Cuenta con dispositivo GPS</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que sea de bajo costo</th>
+                    <td> El dispositivo es de costo ideal para vehículos económicos (bajos cilindrajes)</td>
+                    <td>40%</td>
+                    <td>Debido a que pese a que se busco y se implemento varios sensores que ayudaban con la economia,la
+                        cantidad de ellos(debido a el requisito de cantidad de variables) elevo el precio.</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que se pueda manufacturar en la universidad</th>
+                    <td>El dispositivo debe de ser manufacturado </td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que la informacion quede protegida</th>
+                    <td>Encriptado</td>
+                    <td>0%</td>
+                    <td>Como el dispositivo no cuenta con acelerometro no es posible calcular la inclinación de la moto
+                        con respecto a la tierra</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que sea resistente al ambiente externo</th>
+                    <td>El dispositvo debe de soportar cambios de temperatura y humedad</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que transfiera los datos de forma ágil</th>
+                    <td>El dispositivo cuenta con un alta frecuencia para la transferencia de datos </td>
+                    <td>70%</td>
+                    <td>Si bien el modulo Wi-Fi soporta la transferencia de datos deseada, hay algunos sensores que se
+                        demoran un poco para obtener los datos por tal motivo la transferencia de estos disminuye</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que sea confiable</th>
+                    <td>El dispositivo debe de ser confiable</td>
+                    <td>90%</td>
+                    <td>Como el dispositivo esta fabricado con sensores de prototipado no podemos garantizar al 100% su
+                        confiabilidad</td>
+                </tr>
+                <tr class="highlight">
+                    <th>Que se pueda replicar</th>
+                    <td>Se debe poder manufacturar mas de uno en poco tiempo</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que el mantenimiento no sea muy frecuente</th>
+                    <td>Los intrumentos equipados no requieran mayor intervención</td>
+                    <td>50%</td>
+                    <td>Estimamos que el mantenimiento se realice cada 6 meses debido a los sensores que son de
+                        prototipado y pueden traer algunos fallos</td>
+                </tr>
+                <tr>
+                    <th>Que sea resistente al agua</th>
+                    <td>El dispositivo debe de ser hermetico</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que dure varios años</th>
+                    <td>El dispositivo tiene durabilidad</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>Que no sea muy costoso operarlo</th>
+                    <td>Costo de operación bajo</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
+                </tr>
+                <tr>
+                    <th>-</th>
+                    <td>Total</td>
+                    <td>82%</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h1>Simulaciones</h1>
+    </section>
+
+    <br><br><br>
+    </section>
+
+    <section id="footer">
+        <p class="footer-text">© EAFIT</p>
+        <p class="footer-text"> 2021</p>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src='index.js' charset='utf-8'></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
+</html>

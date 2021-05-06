@@ -4,6 +4,7 @@ body {
     background-color: #fff;
 }
 
+
 h1 {
     color: #0984e3;
     font-size: 5.625rem;
@@ -23,7 +24,7 @@ h2 {
 }
 
 p {
-    margin: 10px 10% 10px 5%;
+    margin: 10px 10% 10px 10%;
     font-size: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: 1px;
@@ -56,7 +57,7 @@ span {
 }
 
 .figure {
-    width:65%;
+    width:50%;
     margin-top: 40px;
     margin-bottom: 30px;
     display: block;
@@ -157,6 +158,9 @@ span {
 
 
 
+.highlight{
+    background-color:#d8e3e7;
+}
 #principal {
     text-align: center;
     background-color: #fff;
@@ -169,7 +173,6 @@ span {
 #estadodelarte{
     padding-top:10px;
 }
-
 
 
 #footer{
