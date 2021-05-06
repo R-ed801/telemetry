@@ -251,13 +251,94 @@
                 </tr>
             </tbody>
         </table>
-
         <p>Usaremos 14.4 metros de cable AWG 22 y 1.8 metros de cable AWG 18 para todo el sistema, para la protección
             organización los cables van dentro de una funda trenzada que permite flexibilidad y poder separar los cables
             fácilmente, además usamos termo encogible para partes específicas. En cuanto a las conexiones usaremos
             conectores impermeables aéreos para garantizar la protección. </p>
 
         <img class="figure" src="images/cables.PNG" alt="">
+
+        <h2>No comerciales</h2>
+        <ul>
+            <li>
+                <p><span>&#10074;</span> Carcasa principal</p>
+            </li>
+            <li>
+                <p><span>&#10074;</span> Carcasa hall velocidad</p>
+            </li>
+            <li>
+                <p><span>&#10074;</span> Soportes de montaje
+                </p>
+            </li>
+        </ul>
+
+        <p>Los componentes no comerciales, los cuales vamos a fabricar se planean hacer un prototipado en impresión 3D
+            en material PETG con el fin de que resista mejor el calor, sin embargo, una vez se vaya a producir en masa
+            se desea realizar un molde de inyección para reducir los costos considerablemente. A continuación, los
+            prototipos de las piezas para hacer las pruebas. <br> Para el Sensor de velocidad se diseñó una carcasa en
+            la cual va el sensor embebido para protegerlo de los elementos, está carcasa va sujetada a la suspensión.
+        </p>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/fisico1.PNG" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/fisico2.PNG" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/fisico3.PNG" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <img src="images/sujetador.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Conexiones Fisicas</h2>
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <p>Rpm Rueda Delantera  </p>
+                        <img src="images/rpmruedadelatera.PNG" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <p>Switch de freno </p>
+                        <img src="images/switchdefreno.PNG" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <p>Potenciómetro (Acelerador) </p>
+                        <img src="images/acelerador.PNG" alt="">
+                    </div>
+                    <div class="col-5">
+                        <div class="rating">
+                        </div>
+                        <p>Sensor de flujo </p>
+                        <img src="images/sensorflujo.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h2>Conexiones</h2>
         <p>En el siguiente diagrama se muestran las conexiones de los componentes. </p>
         <img class="figure" src="images/conections_schem.png" alt="">
@@ -287,6 +368,9 @@
         <h2>Envio</h2>
         <p>Consumo de Esp8266 es de 75mA</p>
         <img class="figure" src="images/envio.PNG" alt="">
+        <p>Ahora vemos el voltaje regulado tanto con la moto apagada como encendida, y para proteger todo el sistema
+            usamos una porta fusible impermeable desde la alimentación de la batería. </p>
+        <img class="figure" src="images/cconector.PNG" alt="">
     </section>
 
 
@@ -412,12 +496,95 @@
                     <td>2</td>
                     <td>4</td>
                 </tr>
+                <tr>
+                    <th>Sujeción de la caja</th>
+                    <td>Desprendimiento de la caja control</td>
+                    <td>Desprendimiento de cables</td>
+                    <td>Las vibraciones de la motocicleta </td>
+                    <td>Desprendimiento del componente </td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>14</td>
+                    <td>Mejorar la sujeción con elementos que absorban vibraciones (e.g. tuerca con traba) </td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>Sujeción de la caja control</th>
+                    <td>Desprendimiento de la caja control</td>
+                    <td>Daño de componentes</td>
+                    <td>El viento a grandes velocidades puede tumbare la caja control </td>
+                    <td>Desprendimiento de componente </td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>14</td>
+                    <td>Mejorar la sujeción con elementos mas rigidos</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>Lectura de datos</th>
+                    <td>Ruido por tipo de cable</td>
+                    <td>Datos erróneos</td>
+                    <td>Tipo de cable utilizado</td>
+                    <td>Midiendo el voltaje de alimentación, Inconcistencia de datos</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>240</td>
+                    <td>Verificar el volataje de alimentación y analizar el cable y la bateria de suministro</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Funcionamiento general</th>
+                    <td>Daño eléctrico</td>
+                    <td>Daño en componentes eléctricos</td>
+                    <td>Voltajes superiores a los requeridos</td>
+                    <td>Deja de funcionar</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>40</td>
+                    <td>Implementar interfases para garantizar que el voltaje que recibe el controlador es el necesario
+                        y
+                        no mas del necesario, al igual con los sensores que lo requieran</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Sujeción de sensores</th>
+                    <td>Desprendimiento de sensores</td>
+                    <td>Datos erroneos</td>
+                    <td>Vibraciones de la motocicleta/mala sujeción</td>
+                    <td>Incoherencia / sensor suelto</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>72</td>
+                    <td>Verificar la correcta sujeción de los sensores e implementar elementos de sujeción anti
+                        vibraciones de ser necesario</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>6</td>
+                </tr>
             </tbody>
         </table>
     </section>
 
     <section id="CADo">
-        <h1>Render y vistas</h1>
+        <h1>CAD</h1>
         <p>Algunos componentes se piensan almacenar en una caja especialmente diseñada para ellos por tal motivo a
             continuación se muestran las vistas y el render de esta caja. </p>
 
