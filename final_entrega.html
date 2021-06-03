@@ -34,6 +34,9 @@
                         <a class="nav-link" href="#pruebas">Pruebas</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#comp">Componetes</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#planos">Planos de Detalle</a>
                     </li>
                     <li class="nav-item">
@@ -132,22 +135,6 @@
                     <td>0.0015</td>
                 </tr>
                 <tr>
-                    <th>Flujo de combustible</th>
-                    <td>g1/2 metálico </td>
-                    <td>$ 43.000,00</td>
-                    <td>-</td>
-                    <td>5</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>Presión Admisión</th>
-                    <td>MPX5100</td>
-                    <td>$ 75.000,00</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>0.035</td>
-                </tr>
-                <tr>
                     <th>Presión Barométrica </th>
                     <td>BME280</td>
                     <td>$ 16.000,00</td>
@@ -188,14 +175,6 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th>Lambda</th>
-                    <td>Lambda universal 4 cables</td>
-                    <td>$ 109.000,00</td>
-                    <td>1000</td>
-                    <td>12</td>
-                    <td>12</td>
-                </tr>
-                <tr>
                     <th>GPS</th>
                     <td>GY-NEO6MV2</td>
                     <td>$ 15.000,00</td>
@@ -210,14 +189,6 @@
                     <td>94</td>
                     <td>9</td>
                     <td>0.846</td>
-                </tr>
-                <tr>
-                    <th>Procesador</th>
-                    <td>PCB</td>
-                    <td>$ 20.000,00</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
                 </tr>
                 <tr>
                     <th>Envio de datos</th>
@@ -259,13 +230,27 @@
                     <td>-</td>
                     <td>-</td>
                 </tr>
-
+                <tr>
+                    <th>Acelerometro</th>
+                    <td>MMA8452</td>
+                    <td>$ 9.000,00</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
                 <tr>
                     <th></th>
                     <td></td>
-                    <td>$ 628.500,00</td>
+                    <td>$459.500,00</td>
                     <td>1376.1</td>
                     <td>14.5</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Precio de Venta</td>
+                    <td>$597.350,00</td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -814,14 +799,14 @@
                 <tr class="highlight">
                     <th>Que no se hagan modificación fisica a la motocicleta </th>
                     <td>No es intrusivo </td>
-                    <td>80%</td>
+                    <td>90%</td>
                     <td>Algunas de las variables que requieren ser leidas, para tener fiabilidad y una correcta lectura
                         , se requiere el uso de sensores algo intrusivos(Freno,Señal encendido).</td>
                 </tr>
                 <tr>
                     <th>Que no ocupe mucho espacio </th>
                     <td>Es compacto y adaptable adecuado para las motos de bajo cc</td>
-                    <td>100%/td>
+                    <td>100%</td>
                     <td>Cumplido</td>
                 </tr>
                 <tr class="highlight">
@@ -853,14 +838,13 @@
                 <tr class="highlight">
                     <th>Que pueda medir el consumo de combustible </th>
                     <td>Cuenta con un sensor de nivel de combustible</td>
-                    <td>60%</td>
-                    <td>Se cuenta con el sensor en fisico , pero no ha podido ser utilziado debido a
-                        inconvenientes(pandemia)</td>
+                    <td>0%</td>
+                    <td>Se cuenta con el sensor en fisico , pero no provee datos confiables</td>
                 </tr>
                 <tr class="highlight">
                     <th>Que mida la aceleración </th>
                     <td>Cuenta con un acelerómetro</td>
-                    <td>70%</td>
+                    <td>100%</td>
                     <td>Si bien el dispositivo no cuenta con acelerometro si podemos medir la aceleración utilizando
                         datos ya obtenidos tales como la velocidad, posición y tiempo.</td>
                 </tr>
@@ -873,8 +857,8 @@
                 <tr>
                     <th>Que mida el angulo de la moto con respecto a la tierra</th>
                     <td>Cuenta con nivel</td>
-                    <td>0%</td>
-                    <td>Como el dispo</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
                 </tr>
                 <tr>
                     <th>Que mida la posicion
@@ -898,7 +882,7 @@
                 <tr class="highlight">
                     <th>Que sea de bajo costo</th>
                     <td> El dispositivo es de costo ideal para vehículos económicos (bajos cilindrajes)</td>
-                    <td>40%</td>
+                    <td>50%</td>
                     <td>Debido a que pese a que se busco y se implemento varios sensores que ayudaban con la economia,la
                         cantidad de ellos(debido a el requisito de cantidad de variables) elevo el precio.</td>
                 </tr>
@@ -912,8 +896,7 @@
                     <th>Que la informacion quede protegida</th>
                     <td>Encriptado</td>
                     <td>0%</td>
-                    <td>Como el dispositivo no cuenta con acelerometro no es posible calcular la inclinación de la moto
-                        con respecto a la tierra</td>
+                    <td>La información no se envia de una manera encriptada</td>
                 </tr>
                 <tr class="highlight">
                     <th>Que sea resistente al ambiente externo</th>
@@ -924,9 +907,8 @@
                 <tr>
                     <th>Que transfiera los datos de forma ágil</th>
                     <td>El dispositivo cuenta con un alta frecuencia para la transferencia de datos </td>
-                    <td>70%</td>
-                    <td>Si bien el modulo Wi-Fi soporta la transferencia de datos deseada, hay algunos sensores que se
-                        demoran un poco para obtener los datos por tal motivo la transferencia de estos disminuye</td>
+                    <td>100%</td>
+                    <td>Cumplido</td>
                 </tr>
                 <tr class="highlight">
                     <th>Que sea confiable</th>
@@ -944,15 +926,15 @@
                 <tr>
                     <th>Que el mantenimiento no sea muy frecuente</th>
                     <td>Los intrumentos equipados no requieran mayor intervención</td>
-                    <td>50%</td>
+                    <td>70%</td>
                     <td>Estimamos que el mantenimiento se realice cada 6 meses debido a los sensores que son de
                         prototipado y pueden traer algunos fallos</td>
                 </tr>
                 <tr>
                     <th>Que sea resistente al agua</th>
                     <td>El dispositivo debe de ser hermetico</td>
-                    <td>100%</td>
-                    <td>Cumplido</td>
+                    <td>90%</td>
+                    <td>No es sumergible al 100% pero si resiste bastante bien ser sumergido por tiempos cortos</td>
                 </tr>
                 <tr>
                     <th>Que dure varios años</th>
@@ -969,7 +951,7 @@
                 <tr>
                     <th>-</th>
                     <td>Total</td>
-                    <td>82%</td>
+                    <td>87%</td>
                     <td>-</td>
                 </tr>
             </tbody>
@@ -986,6 +968,21 @@
 
         <p>Link del sitio web <a target="_blank"
                 href="http://difaultn.duckdns.org:1880/ui/#!/0?socketid=ToaFWPJI9k9lZy0HAAAD">click aquí</a></p>
+    </section>
+
+    <section id="final">
+        <h1>Rsultado Final</h1>
+        <h2>Prueba Hermética</h2>
+        <p>Para ver el video dar click <a target="_blank"
+            href="https://www.youtube.com/watch?v=5PbHGaaXlfA&feature=youtu.be&ab_channel=SebastianZu%C3%B1iga">aquí</a></p>
+        <h2>Prueba Final</h2>
+        <p>Para ver el video dar click <a target="_blank"
+            href="https://www.youtube.com/watch?v=jF5pruhMbno&ab_channel=MiguelCasta%C3%B1o">aquí</a></p>
+
+        <h2>Flyer del producto</h2>
+
+        <img class="figure" src="images/Modern House Real Estate Flyer.png" alt="">
+
     </section>
 
     <br><br><br>
